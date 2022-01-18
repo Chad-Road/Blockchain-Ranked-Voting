@@ -18,7 +18,7 @@ class VoteBlock:
             "the hash for the current vote is", self.cur_hash
         return block_contents
 
-    def current_hash(self):
+    # def current_hash(self):
 
     
 
