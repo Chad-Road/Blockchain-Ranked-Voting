@@ -40,7 +40,7 @@ class VoteBlock:
         # return block_contents
 
     def current_hash(self):
-        to_hash = str(user_num) + str(datetime.datetime.now())\
+        to_hash = str(self.user_num) + str(datetime.datetime.now())\
              + str(self.votes_for) + str(self.prev_hash)
         vote_block_hash = sha256(to_hash.encode())
         return vote_block_hash.hexdigest()
@@ -69,7 +69,7 @@ class VerifyVotes:
         self.voter_list = voter_number_list
 
     def check_votes(self):
-        if 
+        #if 
         vote_checker = "At time:", self.str_timestamp, "\r\n",\
             "User Number:", self.str_user_num, "\r\n",\
             "voted for:", self.str_user_votes, "\r\n",\
