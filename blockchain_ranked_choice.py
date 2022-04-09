@@ -28,9 +28,6 @@ class VoteBlock:
         self.block_contents = self.str_user_num + self.str_timestamp
         return 
 
-    
-
-
         # num_votes = len(self.votes)
         # block_contents = "At time", self.timestamp,\
         #     "User number", self.user_num,\
@@ -74,7 +71,6 @@ class VerifyVotes:
             "User Number:", self.str_user_num, "\r\n",\
             "voted for:", self.str_user_votes, "\r\n",\
             "Is this correct?", 
-
 
 class ProofStakeVote:
     def __init__(self):
